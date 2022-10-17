@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Media Queries</title>
+    <style>
+      @font-face {
+        font-family: ;
+        src: url();
+      }
+
+      /* @media not/only mediatype and(mediafeature css-code) */
+
+      @media only screen and (min-width: 0px) and (max-width: 499px) {
+        [data-mybox="mybox"] {
+          width: 200px;
+          height: 200px;
+          background: red;
+        }
+      }
+      @media only screen and (min-width: 500px) and (max-width: 899px) {
+        [data-mybox="mybox"] {
+          width: 400px;
+          height: 400px;
+          background: green;
+        }
+      }
+      @media only screen and (min-width: 900px) and (max-width: 1400px) {
+        [data-mybox="mybox"] {
+          width: 600px;
+          height: 600px;
+          background: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ***We have three operating system..
+    1)Linex 95% internet dyployment website
+    2)Windows 
+    3)MacOS 
+    ***range/breakpoints use for the making responsive design-->
+
+    <div data-mybox="mybox"></div>
+  </body>
+</html>
